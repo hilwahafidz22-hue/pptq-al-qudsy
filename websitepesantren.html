@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPTQ Al-Qudsy - Membentuk Generasi Qur'ani Modern</title>
+    <style>
+        :root {
+            --primary: #004d40;
+            --secondary: #00796b;
+            --accent: #ffc107;
+            --light: #f9f9f9;
+            --dark: #2c3e50;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+        }
+
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; color: var(--dark); line-height: 1.6; scroll-behavior: smooth; }
+
+        header { background: var(--primary); color: var(--white); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { width: 85%; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: var(--white); margin-left: 20px; text-decoration: none; font-weight: bold; font-size: 14px; }
+
+        .hero { 
+            background: linear-gradient(rgba(0,77,64,0.7), rgba(0,77,64,0.7)), url('img/logo.png'); 
+            background-size: cover; background-position: center; color: white; padding: 120px 20px; text-align: center; 
+        }
+
+        .container { width: 85%; max-width: 1100px; margin: auto; padding: 60px 0; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { color: var(--primary); font-size: 2rem; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 10px; }
+
+        .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center; transition: 0.3s; }
+        .card img { width: 100%; height: 320px; object-fit: cover; background: #eee; }
+        .card-body { padding: 20px; }
+
+        .wa-float {
+            position: fixed; bottom: 30px; right: 30px; background-color: var(--whatsapp); color: white;
+            padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; display: flex; align-items: center; gap: 10px;
+        }
+
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+        table th, table td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+        table th { background-color: var(--primary); color: white; }
+
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 50px 20px; }
+    </style>
+</head>
+<body>
+
+<a href="https://wa.me/6281234567890?text=Assalammualaikum%20Admin%20PPTQ%20Al-Qudsy" class="wa-float" target="_blank">
+    <span>Chat Admin (WA)</span>
+</a>
+
+<header>
+    <div class="nav-container">
+        <div style="font-weight: bold; font-size: 1.2rem;">PPTQ AL-QUDSY</div>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#pengasuh">Pengasuh</a>
+            <a href="#jadwal">Jadwal</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <h1>PPTQ AL-QUDSY</h1>
+    <p>Mencetak Generasi Qur'ani yang Modern dan Berakhlak Karimah</p>
+</section>
+
+<div class="container" id="pengasuh">
+    <div class="section-title"><h2>Pimpinan & Asatidz</h2></div>
+    <div class="profile-grid">
+        <div class="card">
+            <img src="img/pengasuh.jpeg" alt="Pengasuh">
+            <div class="card-body">
+                <h3>Kyai Agus Mulyadi Bayu Rifi Lc.</h3>
+                <p>Pengasuh Utama</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/ustadz1.jpg" alt="Ustadz">
+            <div class="card-body">
+                <h3>Ust. [Nama Ustadz]</h3>
+                <p>Kepala Tahfidz</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="jadwal">
+    <div class="section-title"><h2>Jadwal Harian</h2></div>
+    <table>
+        <thead>
+            <tr><th>Waktu</th><th>Kegiatan</th><th>Keterangan</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>04.30 - 05.00</td><td>Sholat Subuh</td><td>Berjamaah</td></tr>
+            <tr><td>05.00 - 06.30</td><td>Halaqah Pagi</td><td>Setoran Hafalan</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<footer id="kontak">
+    <p>&copy; 2026 PPTQ Al-Qudsy | Alamat Pesantren Anda</p>
+</footer>
+
+</body>
+</html>
