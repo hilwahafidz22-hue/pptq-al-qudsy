@@ -3,198 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPTQ Al-Qudsy - Membentuk Generasi Qur'ani Modern</title>
+    <title>PPTQ Al-Qudsy - Pesantren Tahfidz & Mitra Haji Umroh</title>
+    
+    <meta name="description" content="Website Resmi PPTQ Al-Qudsy. Pesantren Tahfidz Qur'an Modern dan Mitra Resmi Travel Haji & Umroh Terpercaya.">
+
     <style>
-        /* CSS Dasar & Variabel Warna */
         :root {
             --primary: #004d40;
             --secondary: #00796b;
             --accent: #ffc107;
-            --light: #f9f9f9;
+            --light: #f4f4f4;
             --dark: #2c3e50;
             --white: #ffffff;
+            --whatsapp: #25d366;
+            --gold: #d4af37; /* Warna elegan untuk Haji/Umroh */
         }
 
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            color: var(--dark);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; color: var(--dark); line-height: 1.6; scroll-behavior: smooth; }
 
-        /* Navigasi */
-        header { 
-            background: var(--primary); 
-            color: var(--white); 
-            padding: 15px 0; 
-            position: sticky; 
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .nav-container {
-            width: 85%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav a { color: var(--white); margin-left: 20px; text-decoration: none; font-weight: bold; font-size: 14px; }
+        /* Navigation */
+        header { background: var(--primary); color: var(--white); padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { width: 85%; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: var(--white); margin-left: 15px; text-decoration: none; font-weight: bold; font-size: 13px; text-transform: uppercase; }
         nav a:hover { color: var(--accent); }
 
-        /* Hero Section */
+        /* Hero */
         .hero { 
-            /* Mengambil logo dari folder img sebagai background banner */
-            background: linear-gradient(rgba(0,77,64,0.7), rgba(0,77,64,0.7)), url('img/logo.png'); 
-            background-size: cover;
-            background-position: center;
-            color: white; 
-            padding: 120px 20px; 
-            text-align: center; 
+            background: linear-gradient(rgba(0,77,64,0.7), rgba(0,77,64,0.7)), url('img/background.jpg'); 
+            background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; 
         }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: auto; opacity: 0.9; }
 
-        /* Container Umum */
         .container { width: 85%; max-width: 1100px; margin: auto; padding: 60px 0; }
         .section-title { text-align: center; margin-bottom: 40px; }
         .section-title h2 { color: var(--primary); font-size: 2rem; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 10px; }
 
-        /* Visi Misi Section */
-        .visi-misi-box { background: var(--light); padding: 40px; border-radius: 15px; border-left: 5px solid var(--primary); }
-        .visi-misi-box h3 { color: var(--secondary); margin-top: 25px; }
-        
-        /* Pengasuh & Asatidz Grid */
-        .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 320px; object-fit: cover; background: #eee; }
-        .card-body { padding: 20px; }
-        .card h3 { margin: 10px 0 5px; color: var(--primary); }
-        .card p { color: #777; font-size: 0.9rem; margin: 0; }
+        /* Bagian Travel Haji & Umroh */
+        .travel-section { background: #fffdf2; border: 2px solid var(--gold); border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
+        .travel-logo { flex: 1; min-width: 250px; text-align: center; }
+        .travel-logo img { max-width: 200px; border-radius: 10px; }
+        .travel-info { flex: 2; min-width: 300px; }
+        .travel-info h3 { color: var(--gold); margin-top: 0; font-size: 1.8rem; }
+        .badge { background: var(--gold); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
 
-        /* Jadwal Table */
-        .table-wrapper { overflow-x: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-        table { width: 100%; border-collapse: collapse; background: white; }
-        table th, table td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
-        table th { background-color: var(--primary); color: white; }
-        table tr:nth-child(even) { background-color: #fcfcfc; }
+        /* Visi Misi */
+        .visi-misi-box { background: var(--light); padding: 30px; border-radius: 15px; border-left: 10px solid var(--primary); }
 
-        /* Footer */
-        footer { background: #1a1a1a; color: white; text-align: center; padding: 50px 20px; }
-        .footer-info { margin-bottom: 20px; }
-        .cta-btn { background: var(--accent); color: #333; padding: 12px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; margin-top: 20px; transition: 0.3s; }
-        .cta-btn:hover { background: #e5ad06; transform: scale(1.05); }
+        /* Galeri */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .gallery-item { border-radius: 10px; overflow: hidden; height: 180px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.4s; }
+        .gallery-item img:hover { transform: scale(1.1); }
+
+        /* WhatsApp Button */
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 9999; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; }
+
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 40px 20px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
+<a href="https://wa.me/6281234567890?text=Assalammualaikum%20Admin%20Al-Qudsy" class="wa-float" target="_blank">
+    <span>Tanya Kami (WA)</span>
+</a>
+
 <header>
     <div class="nav-container">
-        <div style="font-weight: bold; font-size: 1.2rem;">PPTQ AL-QUDSY</div>
+        <div style="font-weight: bold; font-size: 1.4rem;">PPTQ AL-QUDSY</div>
         <nav>
-            <a href="#home">Beranda</a>
-            <a href="#visi-misi">Visi & Misi</a>
-            <a href="#pengasuh">Pengasuh</a>
-            <a href="#jadwal">Jadwal</a>
-            <a href="#kontak">Kontak</a>
+            <a href="#home">Home</a>
+            <a href="#visi-misi">Visi Misi</a>
+            <a href="#travel">Haji & Umroh</a>
+            <a href="#galeri">Kegiatan</a>
         </nav>
     </div>
 </header>
 
 <section class="hero" id="home">
     <h1>PPTQ AL-QUDSY</h1>
-    <p>Membentuk Generasi Qur'ani yang Berkarakter Modern, Cerdas Teknologi, dan Tetap Berpegang Teguh pada Akhlakul Karimah.</p>
-    <a href="#kontak" class="cta-btn">Info Pendaftaran</a>
+    <p>Mencetak Generasi Qur'ani yang Modern, Beradab, dan Berwawasan Global</p>
 </section>
 
 <div class="container" id="visi-misi">
-    <div class="section-title">
-        <h2>Visi & Misi</h2>
-    </div>
+    <div class="section-title"><h2>Visi & Misi</h2></div>
     <div class="visi-misi-box">
         <h3>Visi Kami</h3>
-        <p><i>"Menjadi lembaga pendidikan Al-Qur'an terkemuka yang melahirkan Huffadz (penghafal Al-Qur'an) berkarakter moderat, cerdas teknologi, dan berakhlakul karimah."</i></p>
-        
+        <p><i>"Menjadi pusat pendidikan Al-Qur'an yang unggul dalam melahirkan penghafal Al-Qur'an berjiwa mandiri dan melek teknologi."</i></p>
         <h3>Misi Kami</h3>
         <ul>
-            <li>Menyelenggarakan pembelajaran Al-Qur'an dengan standar tajwid dan hafalan yang mutqin.</li>
-            <li>Membekali santri dengan literasi digital yang sehat sebagai bekal dakwah di masa depan.</li>
-            <li>Menanamkan nilai-nilai adab, kemandirian, dan kesantunan dalam berinteraksi sosial.</li>
-            <li>Menciptakan lingkungan pesantren yang asri, modern, dan kondusif untuk menghafal.</li>
+            <li>Tahfidz Al-Qur'an dengan bimbingan Asatidz bersanad.</li>
+            <li>Penerapan adab Islami dalam keseharian santri.</li>
+            <li>Pengembangan bakat santri di bidang digital dan kewirausahaan.</li>
         </ul>
     </div>
 </div>
 
-<div class="container" id="pengasuh">
-    <div class="section-title">
-        <h2>Pimpinan & Asatidz</h2>
-        <p>Dibimbing oleh tenaga pendidik yang kompeten dan berdedikasi.</p>
-    </div>
-    <div class="profile-grid">
-        <div class="card">
-            <img src="img/pengasuh.jpeg" alt="Kyai Agus Mulyadi Bayu Rifi">
-            <div class="card-body">
-                <h3>Kyai Agus Mulyadi Bayu Rifi Lc.</h3>
-                <p>Pengasuh Utama & Pembina Sanad</p>
-            </div>
+<div class="container" id="travel">
+    <div class="section-title"><h2>Layanan Kerja Sama</h2></div>
+    <div class="travel-section">
+        <div class="travel-logo">
+            <img src="img/logo-travel.jpg" alt="Logo Travel Haji Umroh">
+            <p><span class="badge">MITRA RESMI</span></p>
         </div>
-
-        <div class="card">
-            <img src="img/ustadz1.jpg" alt="Ust. Nama Ustadz">
-            <div class="card-body">
-                <h3>Ust. [Nama Ustadz]</h3>
-                <p>Kepala Bidang Tahfidz Putra</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/ustadzah1.jpg" alt="Ustadzah Nama">
-            <div class="card-body">
-                <h3>Ustadzah [Nama]</h3>
-                <p>Pembimbing Tahfidz Putri</p>
-            </div>
+        <div class="travel-info">
+            <h3>Pendaftaran Haji & Umroh</h3>
+            <p>PPTQ Al-Qudsy bekerja sama dengan <strong>[Nama Travel Partner]</strong> melayani keberangkatan jamaah Haji dan Umroh dengan pelayanan terbaik dan pembimbing ibadah yang berpengalaman.</p>
+            <ul>
+                <li>Paket Umroh Reguler & Plus</li>
+                <li>Pendaftaran Haji Plus & Furoda</li>
+                <li>Bimbingan Manasik Intensif</li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20tanya%20paket%20Umroh" style="color: var(--gold); font-weight: bold; text-decoration: none;">Hubungi Konsultan Haji Kami &rarr;</a>
         </div>
     </div>
 </div>
 
-<div class="container" id="jadwal">
-    <div class="section-title">
-        <h2>Jadwal Kegiatan Harian</h2>
-        <p>Agenda rutin santri dalam membentuk disiplin dan hafalan yang kuat.</p>
-    </div>
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Waktu</th>
-                    <th>Nama Kegiatan</th>
-                    <th>Keterangan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>03.30 - 04.30</td><td>Qiyamul Lail</td><td>Sholat Tahajud & Muhasabah Diri</td></tr>
-                <tr><td>04.30 - 05.00</td><td>Sholat Subuh</td><td>Berjamaah & Dzikir Pagi</td></tr>
-                <tr><td>05.00 - 06.30</td><td><strong>Halaqah Al-Qur'an</strong></td><td>Setoran Hafalan Baru (Ziyadah)</td></tr>
-                <tr><td>07.30 - 12.00</td><td>Pendidikan Formal</td><td>Sekolah, Madrasah & Kitab Kuning</td></tr>
-                <tr><td>13.00 - 15.00</td><td>Qailulah / Istirahat</td><td>Istirahat Siang & Persiapan Ashar</td></tr>
-                <tr><td>16.00 - 17.30</td><td><strong>Murojaah Sore</strong></td><td>Mengulang Hafalan yang Sudah Ada</td></tr>
-                <tr><td>18.00 - 19.30</td><td>Kajian Malam</td><td>Pendalaman Ilmu Agama & Akhlak</td></tr>
-                <tr><td>21.00</td><td>Istirahat Malam</td><td>Jam Wajib Tidur Santri</td></tr>
-            </tbody>
-        </table>
+<div class="container" id="galeri">
+    <div class="section-title"><h2>Kegiatan Santri</h2></div>
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="img/kegiatan1.jpg" alt="Kegiatan 1"></div>
+        <div class="gallery-item"><img src="img/kegiatan2.jpg" alt="Kegiatan 2"></div>
+        <div class="gallery-item"><img src="img/kegiatan3.jpg" alt="Kegiatan 3"></div>
+        <div class="gallery-item"><img src="img/kegiatan4.jpg" alt="Kegiatan 4"></div>
     </div>
 </div>
 
-<footer id="kontak">
-    <div class="footer-info">
-        <h3>Hubungi Kami</h3>
-        <p>Alamat: Jl. Pesantren Al-Qudsy No. 01, Kota Anda, Indonesia</p>
-        <p>Email: admin@alqudsy.sch.id | WhatsApp: 0812-3456-7890</p>
-    </div>
-    <p style="opacity: 0.6; font-size: 0.8rem;">&copy; 2026 PPTQ Al-Qudsy. Seluruh Hak Cipta Dilindungi.</p>
+<footer>
+    <p>&copy; 2026 PPTQ AL-QUDSY. Seluruh Hak Cipta Dilindungi.<br>
+    Alamat: Jl. Pesantren No. 01, Kota Anda.</p>
 </footer>
 
 </body>
