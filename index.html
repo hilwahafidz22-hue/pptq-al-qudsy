@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPTQ Al-Qudsy - Pesantren Tahfidz & Mitra Haji Umroh</title>
     
-    <meta name="description" content="Website Resmi PPTQ Al-Qudsy. Pesantren Tahfidz Qur'an Modern dan Mitra Resmi Travel Haji & Umroh Terpercaya.">
-
     <style>
         :root {
             --primary: #004d40;
@@ -16,7 +14,7 @@
             --dark: #2c3e50;
             --white: #ffffff;
             --whatsapp: #25d366;
-            --gold: #d4af37; /* Warna elegan untuk Haji/Umroh */
+            --gold: #d4af37;
         }
 
         body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; color: var(--dark); line-height: 1.6; scroll-behavior: smooth; }
@@ -37,34 +35,35 @@
         .section-title { text-align: center; margin-bottom: 40px; }
         .section-title h2 { color: var(--primary); font-size: 2rem; border-bottom: 3px solid var(--accent); display: inline-block; padding-bottom: 10px; }
 
-        /* Bagian Travel Haji & Umroh */
-        .travel-section { background: #fffdf2; border: 2px solid var(--gold); border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
-        .travel-logo { flex: 1; min-width: 250px; text-align: center; }
-        .travel-logo img { max-width: 200px; border-radius: 10px; }
-        .travel-info { flex: 2; min-width: 300px; }
-        .travel-info h3 { color: var(--gold); margin-top: 0; font-size: 1.8rem; }
-        .badge { background: var(--gold); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        /* Visi Misi Box */
+        .visi-misi-box { background: var(--light); padding: 30px; border-radius: 15px; border-left: 10px solid var(--primary); margin-bottom: 40px; }
 
-        /* Visi Misi */
-        .visi-misi-box { background: var(--light); padding: 30px; border-radius: 15px; border-left: 10px solid var(--primary); }
+        /* Profil Card (Kepemimpinan) */
+        .profile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center; }
+        .card img { width: 100%; height: 320px; object-fit: cover; background: #eee; }
+        .card-body { padding: 20px; }
+        .card h3 { margin: 10px 0 5px; color: var(--primary); }
 
-        /* Galeri */
+        /* Travel Section */
+        .travel-section { background: #fffdf2; border: 2px solid var(--gold); border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+        .travel-logo img { max-width: 180px; border-radius: 10px; }
+        .travel-info h3 { color: var(--gold); font-size: 1.8rem; margin-top: 0; }
+
+        /* Gallery */
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
         .gallery-item { border-radius: 10px; overflow: hidden; height: 180px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.4s; }
-        .gallery-item img:hover { transform: scale(1.1); }
 
-        /* WhatsApp Button */
+        /* WhatsApp */
         .wa-float { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp); color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 9999; box-shadow: 0 4px 15px rgba(0,0,0,0.3); display: flex; align-items: center; gap: 10px; }
 
-        footer { background: #1a1a1a; color: white; text-align: center; padding: 40px 20px; font-size: 0.9rem; }
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 40px 20px; }
     </style>
 </head>
 <body>
 
-<a href="https://wa.me/6281234567890?text=Assalammualaikum%20Admin%20Al-Qudsy" class="wa-float" target="_blank">
-    <span>Tanya Kami (WA)</span>
-</a>
+<a href="https://wa.me/6281234567890" class="wa-float" target="_blank"><span>Hubungi Admin (WA)</span></a>
 
 <header>
     <div class="nav-container">
@@ -72,6 +71,7 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#visi-misi">Visi Misi</a>
+            <a href="#pengasuh">Pengasuh</a>
             <a href="#travel">Haji & Umroh</a>
             <a href="#galeri">Kegiatan</a>
         </nav>
@@ -80,39 +80,53 @@
 
 <section class="hero" id="home">
     <h1>PPTQ AL-QUDSY</h1>
-    <p>Mencetak Generasi Qur'ani yang Modern, Beradab, dan Berwawasan Global</p>
+    <p>Membentuk Hafidz Qur'an yang Cerdas, Mandiri, dan Berwawasan Global</p>
 </section>
 
 <div class="container" id="visi-misi">
     <div class="section-title"><h2>Visi & Misi</h2></div>
     <div class="visi-misi-box">
-        <h3>Visi Kami</h3>
-        <p><i>"Menjadi pusat pendidikan Al-Qur'an yang unggul dalam melahirkan penghafal Al-Qur'an berjiwa mandiri dan melek teknologi."</i></p>
-        <h3>Misi Kami</h3>
+        <h3>Visi</h3>
+        <p><i>"Menjadi lembaga pendidikan Al-Qur'an terkemuka yang melahirkan Huffadz berkarakter moderat dan cerdas teknologi."</i></p>
+        <h3>Misi</h3>
         <ul>
-            <li>Tahfidz Al-Qur'an dengan bimbingan Asatidz bersanad.</li>
-            <li>Penerapan adab Islami dalam keseharian santri.</li>
-            <li>Pengembangan bakat santri di bidang digital dan kewirausahaan.</li>
+            <li>Menyelenggarakan tahfidz Al-Qur'an dengan bimbingan bersanad.</li>
+            <li>Membekali santri dengan adab dan keterampilan literasi digital.</li>
+            <li>Menciptakan lingkungan pesantren yang asri dan kondusif.</li>
         </ul>
     </div>
 </div>
 
+<div class="container" id="pengasuh">
+    <div class="section-title"><h2>Profil Kepemimpinan</h2></div>
+    <div class="profile-grid">
+        <div class="card">
+            <img src="img/pengasuh.jpeg" alt="Kyai Agus Mulyadi Bayu Rifi">
+            <div class="card-body">
+                <h3>Kyai Agus Mulyadi Bayu Rifi Lc.</h3>
+                <p>Pengasuh Utama</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/ustadz1.jpg" alt="Ustadz">
+            <div class="card-body">
+                <h3>Ust. [Nama Ustadz]</h3>
+                <p>Kepala Tahfidz</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container" id="travel">
-    <div class="section-title"><h2>Layanan Kerja Sama</h2></div>
+    <div class="section-title"><h2>Layanan Haji & Umroh</h2></div>
     <div class="travel-section">
         <div class="travel-logo">
-            <img src="img/logo-travel.jpg" alt="Logo Travel Haji Umroh">
-            <p><span class="badge">MITRA RESMI</span></p>
+            <img src="img/logo-travel.jpg" alt="Mitra Travel">
         </div>
         <div class="travel-info">
-            <h3>Pendaftaran Haji & Umroh</h3>
-            <p>PPTQ Al-Qudsy bekerja sama dengan <strong>[Nama Travel Partner]</strong> melayani keberangkatan jamaah Haji dan Umroh dengan pelayanan terbaik dan pembimbing ibadah yang berpengalaman.</p>
-            <ul>
-                <li>Paket Umroh Reguler & Plus</li>
-                <li>Pendaftaran Haji Plus & Furoda</li>
-                <li>Bimbingan Manasik Intensif</li>
-            </ul>
-            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20tanya%20paket%20Umroh" style="color: var(--gold); font-weight: bold; text-decoration: none;">Hubungi Konsultan Haji Kami &rarr;</a>
+            <h3>Mitra Resmi Perjalanan Ibadah</h3>
+            <p>Bekerja sama dengan <strong>[Nama Travel Partner]</strong>, kami melayani pendaftaran Haji dan Umroh dengan bimbingan ibadah sesuai Sunnah.</p>
+            <a href="https://wa.me/6281234567890" style="color: var(--gold); font-weight: bold;">Info Paket Umroh &rarr;</a>
         </div>
     </div>
 </div>
@@ -128,8 +142,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2026 PPTQ AL-QUDSY. Seluruh Hak Cipta Dilindungi.<br>
-    Alamat: Jl. Pesantren No. 01, Kota Anda.</p>
+    <p>&copy; 2026 PPTQ AL-QUDSY | Alamat Lengkap Pesantren Anda</p>
 </footer>
 
 </body>
